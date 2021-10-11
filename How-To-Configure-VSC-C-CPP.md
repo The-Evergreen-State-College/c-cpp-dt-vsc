@@ -32,13 +32,33 @@ Check Windows command shell (CMD) (a.k.a. Terminal) if folder was automatically 
 
 _The WinGW-64 BIN folder can be added manually either by Windows GUI Advanced System Settings, or via commandline._
 
-Add the BIN directory with Advanced system settigns GUI
+#### Add the `MinGW-64\mingw64\bin` directory with Advanced system settigns GUI
+
+_Changing system environmental variables requires administratove privelege._
+
+Open Advanced System properties
+
+Open _"Environmental Variables..."_
+
+![advanced system settings](./images/Advanced_System_Properties.png)
+
+"Edit" Path variable
+
+![Advanced_System_Environmental_Variables](./images/Advanced_System_Environmental_Variables.png)
+
+add `%ProgramFiles%\mingw-64\mingw64\bin`
 
 ![PATH-GUI](./images/Windows-Environment-Variable-PATH-GUI.png)
 
-Add the BIN directory via commandline
+
+#### Add the BIN directory via commandline
 
 `setx PATH "%PATH%;%ProgramFiles%\mingw-64\mingw64\bin" /M`
+
+The Windows registry key that stores system environmental variables:
+
+`[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment]`
+`Value=Path`
 
 ![PATH-CMD](./images/Windows-Environment-Variable-PATH-cmd.png)
 
