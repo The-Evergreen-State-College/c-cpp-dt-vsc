@@ -4,6 +4,8 @@
 
 Install the current release for [.net sdk x64](https://dotnet.microsoft.com/download/visual-studio-sdks)
 
+_It is necessary to install the .net sdk in order to debug C code._
+
 ## 2. Install MinGW-64
 
 _MinGW-64 project is a port of gcc compiler for Windows OS._
@@ -59,6 +61,12 @@ Install C/C++ (from Microsoft) extension
 
 ***Be sure to select C++ (GDB/LLDB) when compiling code!***
 
+_If you select C++ (Windows) by mistake, the whole thing is FUBAR! Might as well NUKE your system now._
+
+![NUKED](./images/NUKED.gif)
+
+---
+
 ![GCC](./images/VSC-GDB.png)
 
 Keyboard shortcut for compile: Ctrl + shift + B
@@ -67,6 +75,6 @@ This should produce a .exe file in the current directory
 
 - When compiling, a [launch.json](./samples/launch.json) and [tasks.json](./samples/tasks.json) will be created in the current directory in folder `.vscode`
 
-#5 Visual Studio Code Run and Debug
+## 5 Visual Studio Code Run and Debug
 
 ![RunDebug](./images/VSC-C-Run-Debug.png)
