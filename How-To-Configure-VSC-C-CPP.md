@@ -91,6 +91,8 @@ _If you select C++ (Windows) by mistake, the whole thing is FUBAR! Might as well
 
 Keyboard shortcut for compile: `Ctrl + shift + B`
 
+Menu --> Terminal --> Run build task
+
 This should produce a .exe file in the current directory
 
 - When compiling, a [launch.json](./samples/launch.json) and [tasks.json](./samples/tasks.json) will be created in the current directory in folder `.vscode`
