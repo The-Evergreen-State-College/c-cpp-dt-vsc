@@ -24,9 +24,9 @@ Choose the following installation path
 
 ![MinGW-64-path](./images/MinGW-64-installation-x64-path.png)
 
-* It seems modifying the default installtion path effects the installer from adding the folder directory to Windows PATH.
+* _It seems modifying the default installtion path effects the installer from adding the folder directory to Windows PATH as a system environmental variable._
 
-Check Windows command shell (CMD) (a.k.a. Terminal) if folder was automatically added to PATH environment variable
+Check Windows command shell (CMD) (a.k.a. Terminal) if folder was automatically added to PATH environment variable. _Be sure to open a new terminal window when doing this._
 
 ![cmd-test](./images/MinGW-64-installation-x64-cmd-test.png)
 
@@ -89,7 +89,7 @@ _If you select C++ (Windows) by mistake, the whole thing is FUBAR! Might as well
 
 ![GCC](./images/VSC-GDB.png)
 
-Keyboard shortcut for compile: Ctrl + shift + B
+Keyboard shortcut for compile: `Ctrl + shift + B`
 
 This should produce a .exe file in the current directory
 
